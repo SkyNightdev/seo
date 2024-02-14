@@ -52,6 +52,11 @@ nav ul li a:hover {
     background-color: #555;
 }
 
+.fond {
+    background-image: url(../img/fond.jpg);
+    background-size: cover;
+}
+
 section {
     max-width: 800px;
     margin: 20px auto;
@@ -59,6 +64,7 @@ section {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    border-radius: 30px;
 }
 
 
