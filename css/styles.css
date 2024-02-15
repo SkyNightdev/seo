@@ -232,9 +232,27 @@ section p {
 }
 
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
     padding: 1em;
     background-color: #333;
     color: #fff;
-    margin-top: auto; /* Ce paramètre maintient le pied de page en bas */
+    margin-top: auto;
+}
+
+.contact-info, .phone-info {
+    flex-grow: 1;
+}
+
+/* Ajuste la marge à droite pour séparer le numéro de téléphone de l'année */
+.phone-info p {
+    margin-right: 0px;
+}
+
+/* Ajuste le style pour centrer le texte de l'année */
+.footer-year {
+    flex-grow: 0; /* Évite que cette partie ne prenne tout l'espace disponible */
+    margin: 0; /* Supprime la marge par défaut pour que le texte soit centré horizontalement */
 }
