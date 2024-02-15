@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
-    <meta name="description" content="Bienvenue sur le Gaming Campus, c'est un site web de l ecole qui vous permettra d acceder aux formations !">
+    <meta name="description" content="Bienvenue sur le Gaming Campus, c'est un site web de l'école qui vous permettra d'accéder aux formations !">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
+
 <body class="fond">
     <header>
         <h1>Gaming Formation</h1>
@@ -19,14 +23,56 @@
         </nav>
     </header>
 
-    <section>
-            <h2 style="text-align: center;">Tu aimes le Gaming ?</h2>
-            <p>Ne t'inquiètes pas ! Ici tu trouveras des formations à n'importe quelle niveau !</p>
-            <a href="../pages/formation.html" class="button">Voir Formation</a>
+    <section class="home-section">
+        <h2 style="text-align: center;">Tu aimes le Gaming ?</h2>
+        <p>Ne t'inquiètes pas ! Ici tu trouveras des formations à n'importe quel niveau !</p>
+        <a href="../pages/formation.html" class="button">Voir Formation</a>
     </section>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="../img/esport.png" alt="Esport" class="carousel-image">
+            </div>
+            <div class="swiper-slide">
+                <img src="../img/setup.jpeg" alt="Setup" class="carousel-image">
+            </div>
+            <div class="swiper-slide">
+                <img src="../img/play.png" alt="Play" class="carousel-image">
+            </div>
+            <!-- Ajoute autant de slides que nécessaire avec les images de ton choix -->
+        </div>
+        <!-- Ajoute la pagination (si nécessaire) -->
+        <div class="swiper-pagination"></div>
+        <!-- Ajoute les boutons de navigation (si nécessaire) -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
 
     <footer>
         <p>&copy; 2024 Gaming Formation</p>
     </footer>
+
+    <script>
+        // Initialise le carrousel
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 5000, // Définis le délai entre chaque défilement automatique en millisecondes (5 secondes dans cet exemple)
+                disableOnInteraction: false, // Désactive l'autoplay au toucher de l'utilisateur
+            },
+            loop: true, // Active la boucle continue
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
+
 </html>

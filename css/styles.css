@@ -93,6 +93,39 @@ body {
 }
 
 
+.swiper-container {
+    width: 70%;
+    margin: 20px auto 50px; /* Ajuste la marge basse pour augmenter la distance avec le bas de la page */
+}
+
+.swiper-slide {
+    height: 300px;
+    margin-bottom: 20px; /* Ajuste la marge basse pour augmenter la distance entre les images */
+}
+
+.carousel-image {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    top: 50%; /* Positionne les flèches verticalement au centre du carrousel */
+    transform: translateY(-50%); /* Ajuste la position verticale en fonction de la hauteur des flèches */
+}
+
+.swiper-button-next {
+    right: 10px; /* Ajuste la position horizontale de la flèche droite */
+}
+
+.swiper-button-prev {
+    left: 10px; /* Ajuste la position horizontale de la flèche gauche */
+}
+
+
 
 header {
     background: linear-gradient(to right, #333, #6f08aa);
