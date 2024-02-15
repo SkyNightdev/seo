@@ -125,7 +125,27 @@ body {
     left: 10px; /* Ajuste la position horizontale de la flèche gauche */
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrer verticalement le contenu */
+    align-items: center; /* Centrer horizontalement le contenu */
+    background: linear-gradient(to right, #333, #6f08aa);
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
 
+
+.logo {
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+h1 {
+    margin: 0; /* Supprime la marge par défaut du titre */
+}
 
 header {
     background: linear-gradient(to right, #333, #6f08aa);
@@ -144,6 +164,7 @@ header h1 {
 
 nav {
     margin-top: 10px;
+    flex: 1;
 }
 
 nav ul {
